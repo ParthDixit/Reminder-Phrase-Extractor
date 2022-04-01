@@ -31,7 +31,9 @@ def classifier_trainer_main(path):
     tfidf = TfidfTransformer()
     x_train_tfidf = tfidf.fit_transform(clean_vector)
 
-    # cls = MLPClassifier(activation='logistic', max_iter=10, hidden_layer_sizes=[100])
+    ## Choose classifier.
+    
+    # cls = MLPClassifier(activation='logistic', max_iter=10, hidden_layer_sizes=[100]) 
     cls = LogisticRegression()
     cls.fit(x_train_tfidf, y_train)  # Logistic Regression Classifier is trained.
     y_test = cls.predict(x_train_tfidf)
