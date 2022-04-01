@@ -19,7 +19,7 @@ print("Training Completed.")
 
 print("Intilizing Extraction Process....\nPlease Wait for a while.")
 
-# import  REGEX_Gen
+# import  REGEX_Gen             # uncomment to use regex for pattern generation.
 # REGEX_Gen.regex_gen_main(train_path)
 
 import Pattern_Generator
